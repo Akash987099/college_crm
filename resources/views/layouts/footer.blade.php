@@ -218,7 +218,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">
-                            <img src="{{asset('public/frontend/logo.png')}}" style="width:200px;" alt="Logo">
+                            <img src="{{asset('frontend/logo.png')}}" style="width:200px;" alt="Logo">
                             </h4>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-share fa-2x text-white me-2"></i>
@@ -364,14 +364,14 @@
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="{{asset('public/frontend/lib/easing/easing.min.js')}}"></script>
-        <script src="{{asset('public/frontend/lib/waypoints/waypoints.min.js')}}"></script>
-        <script src="{{asset('public/frontend/lib/owlcarousel/owl.carousel.min.js')}}"></script>
-        <script src="{{asset('public/frontend/lib/lightbox/js/lightbox.min.js')}}"></script>
+        <script src="{{asset('frontend/lib/easing/easing.min.js')}}"></script>
+        <script src="{{asset('frontend/lib/waypoints/waypoints.min.js')}}"></script>
+        <script src="{{asset('frontend/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('frontend/lib/lightbox/js/lightbox.min.js')}}"></script>
         
 
         <!-- Template Javascript -->
-        <script src="{{asset('public/frontend/js/main.js')}}"></script>
+        <script src="{{asset('frontend/js/main.js')}}"></script>
     </body>
 
 </html>

@@ -30,7 +30,7 @@
         var imageHtml = `
         <div>
         <br>
-        <img src="public/articles/${article.image}">
+        <img src="articles/${article.image}">
            <h5>${article.title}</h5>
            ${article.description}
            </div>

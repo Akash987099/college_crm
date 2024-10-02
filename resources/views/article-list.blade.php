@@ -23,7 +23,7 @@
                             var html = ` 
                         <div class="text-center rounded col-6">
                 <div class="card">
-                    <img class="card-img-top" src="public/articles/${article.image}" style="width:100%!important;" alt="Card image cap">
+                    <img class="card-img-top" src="articles/${article.image}" style="width:100%!important;" alt="Card image cap">
                     <div class="card-body text-white">
                         <p class="text-dark text-start">${article.title}</p>
                     </div>

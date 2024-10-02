@@ -217,7 +217,7 @@
                                  $('#name_view').val(item.title);
                                  CKEDITOR.instances.programeditor1.setData(item.description);
                                  if (item.image) {
-                        var imgElement = $('<img>').attr('src', "{{ asset('public/articles/') }}/" + item.image);
+                        var imgElement = $('<img>').attr('src', "{{ asset('articles/') }}/" + item.image);
                             $('#image_view').attr('src', imgElement.attr('src'));
                           }
 

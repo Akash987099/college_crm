@@ -246,71 +246,71 @@ Route::middleware(['auth', 'admin'])->group(function () {
     });
     Route::controller(admincontroller::class)->group(function(){
         
-        Route::get('/admin' , 'admin')->name('admin_index');
-        Route::get('/admin/contact/info' , 'contact')->name('contact');
-        Route::get('/admin/top-exam' , 'Topeaxm')->name('top-exam');
-        Route::get('/admin/articles' , 'articles')->name('articles');
-        Route::get('/admin/news' , 'news')->name('news');
-        Route::get('admin/profile' , 'profile')->name('profile');
-        Route::get('admin/university' , 'university')->name('university');
-        Route::get('admin/college' , 'college')->name('college');
-        Route::get('admin/user' , 'user')->name('user');
+        Route::match(['get' , 'post'],'/admin' , 'admin')->name('admin_index');
+        Route::match(['get' , 'post'],'/admin/contact/info' , 'contact')->name('contact');
+        Route::match(['get' , 'post'],'/admin/top-exam' , 'Topeaxm')->name('top-exam');
+        Route::match(['get' , 'post'],'/admin/articles' , 'articles')->name('articles');
+        Route::match(['get' , 'post'],'/admin/news' , 'news')->name('news');
+        Route::match(['get' , 'post'],'admin/profile' , 'profile')->name('profile');
+        Route::match(['get' , 'post'],'admin/university' , 'university')->name('university');
+        Route::match(['get' , 'post'],'admin/college' , 'college')->name('college');
+        Route::match(['get' , 'post'],  'admin/user' , 'user')->name('user');
         
         Route::match(['get', 'post'], 'admin/login-report-view', 'loginReportview')->name('loginReport-view');
         Route::match(['get', 'post'], 'admin/login-report-list', 'loginReportlist')->name('loginReport-list');
         Route::match(['get', 'post'], 'admin/city-change-status', 'citychangestatus')->name('change-city-status');
 
         // country state
-        Route::get('admin/contact-get-data' , 'contactgetdata')->name('contact-get-data');
-        Route::get('admin/contact-getbyid' , 'contactgetbyid')->name('contact-getbyid');
+        Route::match(['get' , 'post'],'admin/contact-get-data' , 'contactgetdata')->name('contact-get-data');
+        Route::match(['get' , 'post'],'admin/contact-getbyid' , 'contactgetbyid')->name('contact-getbyid');
 
 
-        Route::get('admin/country' , 'country')->name('country');
-        Route::get('admin/country/view' , 'country_data')->name('country_data');
-        Route::get('admin/country/delete' , 'country_delete')->name('country-delete');
-        Route::get('admin/country/edit' , 'country_edit')->name('country-edit');
-        Route::get('admin/country/update' , 'country_update')->name('country-update');
-        Route::post('admin/addcountry' , 'addcountry')->name('addcountry');
-        Route::get('admin/city' , 'city')->name('city');
-        Route::get('admin/city_data' , 'city_data')->name('city_data');
-        Route::post('admin/city/add' , 'cityadd')->name('city-add');
-        Route::get('admin/city/delete' , 'citydelete')->name('city-delete');
-        Route::get('admin/city/edit' , 'cityedit')->name('city-edit');
-        Route::post('admin/city/update' , 'cityupdate')->name('city-update');
+        Route::match(['get' , 'post'],'admin/country' , 'country')->name('country');
+        Route::match(['get' , 'post'],'admin/country/view' , 'country_data')->name('country_data');
+        Route::match(['get' , 'post'],'admin/country/delete' , 'country_delete')->name('country-delete');
+        Route::match(['get' , 'post'],'admin/country/edit' , 'country_edit')->name('country-edit');
+        Route::match(['get' , 'post'],'admin/country/update' , 'country_update')->name('country-update');
+        Route::match(['get' , 'post'],'admin/addcountry' , 'addcountry')->name('addcountry');
+        Route::match(['get' , 'post'],'admin/city' , 'city')->name('city');
+        Route::match(['get' , 'post'],'admin/city_data' , 'city_data')->name('city_data');
+        Route::match(['get' , 'post'],'admin/city/add' , 'cityadd')->name('city-add');
+        Route::match(['get' , 'post'],'admin/city/delete' , 'citydelete')->name('city-delete');
+        Route::match(['get' , 'post'],'admin/city/edit' , 'cityedit')->name('city-edit');
+        Route::match(['get' , 'post'],'admin/city/update' , 'cityupdate')->name('city-update');
 
         // test route start
-        Route::get('admin/email' , 'email')->name('test-email');
+        Route::match(['get' , 'post'],'admin/email' , 'email')->name('test-email');
         // test route end
 
         //  program 
-         Route::get('admin/program' ,'program')->name('program');
-         Route::get('admin/program/view' ,'programview')->name('program-view');
-         Route::post('admin/program/add' ,'addprogram')->name('add-program');
-         Route::get('admin/program/delete' ,'deleteprogram')->name('delete-program');
-         Route::get('admin/program/edit' ,'editprogram')->name('edit-program');
-         Route::post('admin/program/update' ,'updateprogram')->name('update-program');
+         Route::match(['get' , 'post'],'admin/program' ,'program')->name('program');
+         Route::match(['get' , 'post'],'admin/program/view' ,'programview')->name('program-view');
+         Route::match(['get' , 'post'],'admin/program/add' ,'addprogram')->name('add-program');
+         Route::match(['get' , 'post'],'admin/program/delete' ,'deleteprogram')->name('delete-program');
+         Route::match(['get' , 'post'],'admin/program/edit' ,'editprogram')->name('edit-program');
+         Route::match(['get' , 'post'],'admin/program/update' ,'updateprogram')->name('update-program');
         // endprogram
 
         // state start
-        Route::get('admin/state' , 'state')->name('state');
-        Route::get('admin/state/view' , 'state_data')->name('state_data');
-        Route::get('admin/state/delete' , 'state_delete')->name('state-delete');
-        Route::get('admin/state/edit' , 'state_edit')->name('state-edit');
-        Route::get('admin/state/update' , 'state_update')->name('state-update');
-        Route::post('admin/addstate' , 'addstate')->name('addstate');
+        Route::match(['get' , 'post'],'admin/state' , 'state')->name('state');
+        Route::match(['get' , 'post'],'admin/state/view' , 'state_data')->name('state_data');
+        Route::match(['get' , 'post'],'admin/state/delete' , 'state_delete')->name('state-delete');
+        Route::match(['get' , 'post'],'admin/state/edit' , 'state_edit')->name('state-edit');
+        Route::match(['get' , 'post'],'admin/state/update' , 'state_update')->name('state-update');
+        Route::match(['get' , 'post'],'admin/addstate' , 'addstate')->name('addstate');
 
         // state end
     });
 
     Route::controller(universitycontroller::class)->group(function(){
-        Route::post('admin/university/add' , 'universityadd')->name('university-add');
+        Route::match(['get' , 'post'],'admin/university/add' , 'universityadd')->name('university-add');
         Route::match(['get', 'post'], 'admin/university/change/top/status', 'universitytopstatus')->name('university-status-change');
-        Route::get('admin/university/data' , 'universitydata')->name('university-data');
-        Route::get('admin/university/delete' , 'universitydelete')->name('university-delete');
-        Route::get('admin/university/edit' , 'universityedit')->name('university-edit');
-        Route::post('admin/university/update' , 'universityupdate')->name('university-update');
-        Route::get('admin/university/getstate-bycountry-id' , 'getstate')->name('getstate-bycountry-id');
-        Route::get('admin/university/getcity-bystate-id' , 'getcity')->name('getcity-bystate-id');
+        Route::match(['get' , 'post'],'admin/university/data' , 'universitydata')->name('university-data');
+        Route::match(['get' , 'post'],'admin/university/delete' , 'universitydelete')->name('university-delete');
+        Route::match(['get' , 'post'],'admin/university/edit' , 'universityedit')->name('university-edit');
+        Route::match(['get' , 'post'],'admin/university/update' , 'universityupdate')->name('university-update');
+        Route::match(['get' , 'post'],'admin/university/getstate-bycountry-id' , 'getstate')->name('getstate-bycountry-id');
+        Route::match(['get' , 'post'],'admin/university/getcity-bystate-id' , 'getcity')->name('getcity-bystate-id');
     });
 
     
@@ -322,9 +322,9 @@ Route::middleware(['auth', 'admin'])->group(function () {
         // Route::get('admin/college/list' , 'college_list')->name('college-list');
         Route::match(['get', 'post'], 'admin/college/list', 'college_list')->name('college-list');
         Route::match(['get', 'post'], 'admin/college-top-status', 'college_topstatus')->name('college-top-status');
-        Route::get('admin/college/edit' , 'collegeedit')->name('college-edit');
-        Route::post('admin/college/update' , 'collegeupdate')->name('college-update');
-        Route::get('admin/college/getstate-byuniversity-id' , 'getuniversityid')->name('getstate-byuniversity-id');
+        Route::match(['get' , 'post'],'admin/college/edit' , 'collegeedit')->name('college-edit');
+        Route::match(['get' , 'post'],'admin/college/update' , 'collegeupdate')->name('college-update');
+        Route::match(['get' , 'post'],'admin/college/getstate-byuniversity-id' , 'getuniversityid')->name('getstate-byuniversity-id');
 
         Route::match(['get', 'post'], 'admin/facility', 'facilityajax')->name('view-facility');
         Route::match(['get', 'post'], 'admin/facility/list', 'facilityajaxlist')->name('list-facility');
@@ -336,16 +336,16 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
     Route::controller(clientcontroller::class)->group(function(){
 
-        Route::get('admin/user/destails', 'userlist')->name('user-list');
-        Route::post('admin/user/create', 'usercreate')->name('user-create');
-        Route::get('admin/user/delete', 'userdelete')->name('user-delete');
-        Route::get('admin/user/edit', 'useredit')->name('user-edit');
-        Route::get('admin/user/get-byuniversity-id', 'universityid')->name('get-byuniversity-id');
-        Route::get('admin/user/get-bycollege-id', 'collegeid')->name('get-bycollege-id');
-        Route::get('admin/user/getcollege-byuni-id', 'getcollegebyuniid')->name('getcollege-byuni-id');
-        Route::post('admin/user/user-update', 'userupdate')->name('user-update');
-        Route::get('admin/change-password', 'changepassword')->name('change-password');
-        Route::post('admin/update-password', 'update_password')->name('update-password');
+        Route::match(['get' , 'post'],'admin/user/destails', 'userlist')->name('user-list');
+        Route::match(['get' , 'post'],'admin/user/create', 'usercreate')->name('user-create');
+        Route::match(['get' , 'post'],'admin/user/delete', 'userdelete')->name('user-delete');
+        Route::match(['get' , 'post'],'admin/user/edit', 'useredit')->name('user-edit');
+        Route::match(['get' , 'post'],'admin/user/get-byuniversity-id', 'universityid')->name('get-byuniversity-id');
+        Route::match(['get' , 'post'],'admin/user/get-bycollege-id', 'collegeid')->name('get-bycollege-id');
+        Route::match(['get' , 'post'],'admin/user/getcollege-byuni-id', 'getcollegebyuniid')->name('getcollege-byuni-id');
+        Route::match(['get' , 'post'],'admin/user/user-update', 'userupdate')->name('user-update');
+        Route::match(['get' , 'post'],'admin/change-password', 'changepassword')->name('change-password');
+        Route::match(['get' , 'post'],'admin/update-password', 'update_password')->name('update-password');
 
         Route::match(['get', 'post'], 'admin/user/view/list', 'viewdata')->name('view-data');
         Route::match(['get', 'post'], 'admin/user/view/address', 'viewaddress')->name('view-address');
@@ -361,15 +361,15 @@ require __DIR__.'/auth.php';
 Route::middleware(['auth', 'user'])->group(function () {
    
     Route::controller(usercontroller::class)->group(function(){
-        Route::get('/user' , 'user_index')->name('user_index');
-        Route::get('/yourProtectedFunction' , 'yourProtectedFunction')->name('yourProtectedFunction');
-        Route::get('/user/about' , 'useruniversity')->name('user-university');
-        Route::get('/user/update-password', 'userchangepassword')->name('user-change-password');
-        Route::post('/user/updatepassword', 'updatechangepassword')->name('update-change-password');
-        Route::get('/user/programs', 'userprograms')->name('user-programs');
-        Route::post('/user/about/add', 'addabout')->name('add-about');
-        Route::get('/user/bord/of/deirector', 'bordofdirector')->name('bord-of-director');
-        Route::get('/user/assign/', 'assigndata')->name('assign-data');
+        Route::match(['get' , 'post'],'/user' , 'user_index')->name('user_index');
+        Route::match(['get' , 'post'],'/yourProtectedFunction' , 'yourProtectedFunction')->name('yourProtectedFunction');
+        Route::match(['get' , 'post'],'/user/about' , 'useruniversity')->name('user-university');
+        Route::match(['get' , 'post'],'/user/update-password', 'userchangepassword')->name('user-change-password');
+        Route::match(['get' , 'post'],'/user/updatepassword', 'updatechangepassword')->name('update-change-password');
+        Route::match(['get' , 'post'],'/user/programs', 'userprograms')->name('user-programs');
+        Route::match(['get' , 'post'],'/user/about/add', 'addabout')->name('add-about');
+        Route::match(['get' , 'post'],'/user/bord/of/deirector', 'bordofdirector')->name('bord-of-director');
+        Route::match(['get' , 'post'],'/user/assign/', 'assigndata')->name('assign-data');
 
         ///////////////  profile /////////////////////
         Route::match(['get', 'post'], 'user/user-profile', 'user_profile')->name('user-profile');
@@ -485,5 +485,5 @@ Route::middleware(['auth', 'user'])->group(function () {
 require __DIR__.'/auth.php';
 
 Route::controller(homecontroller::class)->group(function(){
-    Route::get('/' , 'index')->name('index'); 
+    Route::match(['get' , 'post'] ,'/' , 'index')->name('index'); 
 });

@@ -773,10 +773,10 @@ $('body').on('click' , '.tglbtn' , function(){
 
                         console.log(item.country);
 
-                                 var imageUrl = "{{ asset('public/college/') }}" + '/' +item.image; 
+                                 var imageUrl = "{{ asset('college/') }}" + '/' +item.image; 
                                  $('#imagePreview').attr('src', imageUrl);
 
-                                 var logourl = "{{ asset('public/college/logo/') }}" + '/' + item.logo; 
+                                 var logourl = "{{ asset('college/logo/') }}" + '/' + item.logo; 
                                  $('#logoPreview').attr('src', logourl);
                               
                                  $('#update_update_id').val(item.id);

@@ -16,7 +16,7 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                        <img src="{{asset('/public/college')}}/{{$college->image ??''}}" class="img-fluid"  alt="Responsive image">
+                        <img src="{{asset('/college')}}/{{$college->image ??''}}" class="img-fluid"  alt="Responsive image">
                             <div class="carousel-caption">
                                 <div class="p-3" style="max-width: 900px;">
                                     <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">{{$college->name}}</h4>
@@ -295,7 +295,7 @@
                     </ol>
                     <div class="intro-banner-with-logo">
                       <div class="intro-banner-logo">
-                      <img src="public/college/logo/{{$college->logo ??''}}" alt="">
+                      <img src="college/logo/{{$college->logo ??''}}" alt="">
                      
                       </div>
                       <div class="intro-banner-heading">
@@ -462,7 +462,7 @@
             @foreach($gallery as $key => $val)
             <div class="testimonial-item text-center rounded">
                     <div class="card" >
-  <img class="card-img-top" src="{{asset('public/icons/')}}/{{$val->image}}"  style="width:100%!important; height: 200px;!important;" alt="Card image cap">
+  <img class="card-img-top" src="{{asset('icons/')}}/{{$val->image}}"  style="width:100%!important; height: 200px;!important;" alt="Card image cap">
 </div>
                     </div>
 @endforeach
@@ -832,7 +832,7 @@ function displayImageData(response) {
         var imageHtml = `
             <li class="f-facilities-icon-item">
                 <div class="f-facilities-icon">
-                    <img style="width:150px;" src="public/icons/${facility.facility_image}">
+                    <img style="width:150px;" src="icons/${facility.facility_image}">
                 </div>
                 <h5>${facility.facility_name}</h5>
             </li>`;
@@ -937,7 +937,7 @@ function tblImageData(response) {
         var imageHtml = `
             <li class="p-placements-icon-item">
                 <div class="p-placements-icon">
-                    <img src="public/placement/${tbl.image}" style="height:310px;" alt="${tbl.alt}">
+                    <img src="placement/${tbl.image}" style="height:310px;" alt="${tbl.alt}">
                 </div>
             </li>`;
 
@@ -1050,7 +1050,7 @@ $.each(response.Recognition, function (index, Recognition) {
     <li class="p-placements-icon-item">
 <div class="plc_img_hdng">
 <div class="p-placements-icon">
-<img src="public/accreditations_master/${Recognition.image}" style="width:200px;">
+<img src="accreditations_master/${Recognition.image}" style="width:200px;">
 </div>
 </div>
 <div class="card-block">
@@ -1180,7 +1180,7 @@ $.each(response.event, function (index, event) {
     <div class="row">
     <div class="col-5 col-lg-5">
         <!-- Image Container -->
-        <img class="img-fluid" src="public/${event.image ? 'events/' + event.image : 'placeholder.jpg'}" style="max-width: 100%; height: auto;" alt="Event Image">
+        <img class="img-fluid" src="${event.image ? 'events/' + event.image : 'placeholder.jpg'}" style="max-width: 100%; height: auto;" alt="Event Image">
     </div>
     <div class="col-7 col-lg-7">
         <!-- Content Container -->

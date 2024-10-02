@@ -52,7 +52,7 @@
         var imageHtml = `
         <div>
         <br>
-        <img src="{{asset('public/news/${news.image}')}}">
+        <img src="{{asset('news/${news.image}')}}">
            <h5>${news.title}</h5>
            <br>
            ${news.description}

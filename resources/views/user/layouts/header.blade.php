@@ -22,28 +22,28 @@
     />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="{{asset('public/assets/vendor/fonts/boxicons.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/vendor/fonts/boxicons.css')}}" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="{{asset('public/assets/vendor/css/core.css')}}" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="{{asset('public/assets/vendor/css/theme-default.css')}}" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="{{asset('public/assets/css/demo.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/vendor/css/core.css')}}" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{{asset('assets/vendor/css/theme-default.css')}}" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="{{asset('assets/css/demo.css')}}" />
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="{{asset('public/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
 
-    <link rel="stylesheet" href="{{asset('public/assets/vendor/libs/apex-charts/apex-charts.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/vendor/libs/apex-charts/apex-charts.css')}}" />
 
     <!-- Page CSS -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Helpers -->
-    <script src="{{asset('public/assets/vendor/js/helpers.js')}}"></script>
+    <script src="{{asset('assets/vendor/js/helpers.js')}}"></script>
 
-    <script src="{{asset('public/assets/js/config.js')}}"></script>
-    <script src="{{asset('public/assets/vendor/js/helpers.js')}}"></script>
-    <script src="{{asset('public/assets/ckeditor/ckeditor.js')}}"></script>
+    <script src="{{asset('assets/js/config.js')}}"></script>
+    <script src="{{asset('assets/vendor/js/helpers.js')}}"></script>
+    <script src="{{asset('assets/ckeditor/ckeditor.js')}}"></script>
 
     <!-- datatable -->
 
@@ -112,7 +112,7 @@ th{
            
               </span>
               <span class="app-brand-text demo menu-text fw-bolder ms-2">
-               <img src="{{asset('public/frontend/logo.png')}}" style="width:200px;">
+               <img src="{{asset('frontend/logo.png')}}" style="width:200px;">
               </span>
             </a>
 
@@ -176,7 +176,7 @@ th{
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="{{asset('public/assets/img/avatars/1.png')}}" alt class="w-px-40 h-auto rounded-circle" />
+                      <img src="{{asset('assets/img/avatars/1.png')}}" alt class="w-px-40 h-auto rounded-circle" />
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -185,7 +185,7 @@ th{
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                           <div class="avatar avatar-online">
-                              <img src="{{asset('public/assets/img/avatars/1.png')}}" alt class="w-px-40 h-auto rounded-circle" />
+                              <img src="{{asset('assets/img/avatars/1.png')}}" alt class="w-px-40 h-auto rounded-circle" />
                             </div>
                           </div>
                           <div class="flex-grow-1">

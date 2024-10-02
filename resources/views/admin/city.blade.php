@@ -159,7 +159,7 @@
             data: 'image',
             orderable: false,
             render: function (data, type, row) {
-                return '<img class="img-thumbnail" style="height:50px;" src="' + '{{ asset('public/city/') }}' + '/' + data + '" alt="Image">';
+                return '<img class="img-thumbnail" style="height:50px;" src="' + '{{ asset('city/') }}' + '/' + data + '" alt="Image">';
             }
         },
                     {

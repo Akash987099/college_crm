@@ -866,7 +866,7 @@ return urlFriendlyName;
      
         <li class="text-start" id="facolityalldatafill">        
             <h6>
-                <img src="public/icons/${facility.facility_image}" style="width:50px;" class="img-thumbnail" alt="">
+                <img src="icons/${facility.facility_image}" style="width:50px;" class="img-thumbnail" alt="">
                 <span style="text-align:center;">
                 ${facility.facility_name}
                 </span>
@@ -884,7 +884,7 @@ return urlFriendlyName;
                         <div class="col-4">
                             <div class="position-relative">
                                 <div class="img-container rounded" style="height: auto!important;">
-                                <img src="public/college/${college.image}" " class="img-fluid" alt="">
+                                <img src="college/${college.image}" " class="img-fluid" alt="">
                                     
                                 </div>
                             </div>
@@ -893,7 +893,7 @@ return urlFriendlyName;
                             <div class="d-flex">
                                 <div class="mr-2">
                                 <div class="logo-container">
-                            <img src="public/college/logo/${college.logo}" style="height:80px;" class=""  alt="">
+                            <img src="college/logo/${college.logo}" style="height:80px;" class=""  alt="">
                              </div>
 
                                 </div>

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('frontend')
-<link href="public/frontend/css/new.css" rel="stylesheet">
+<link href="frontend/css/new.css" rel="stylesheet">
             <!-- Carousel Start -->
           
 
@@ -66,7 +66,7 @@
                            <a href="{{route('news-single-data' , ['id' => $val->id])}}">
                            <div class="row bg-white rounded mx-0 p-2">
                                <div class="col-4 text-start">
-                               <img id="" src="{{asset('public/news')}}/{{$val->image}}" style="width:100%;" class="img-fluid rounded" alt="Image">
+                               <img id="" src="{{asset('news')}}/{{$val->image}}" style="width:100%;" class="img-fluid rounded" alt="Image">
                                </div>
                                <div class="col-8 text-start px-0">
                                <p class="text-dark truncate-text" id="anewstitledata">{{ $val->title }}</p>
@@ -183,7 +183,7 @@ $(document).ready(function() {
         var card = $("<div>").addClass("text-center");
         var cardBody = $("<div>").addClass("card");
         var cardText = $("<div>").addClass("card-body");
-        var image = $("<img>").attr("src", "public/frontend/img/india-gate.png")
+        var image = $("<img>").attr("src", "frontend/img/india-gate.png")
             .addClass("mx-auto d-block")
             .attr("alt", city.city_name);
         var cityName = $("<p>").addClass("card-text").text(city.city_name);
@@ -290,7 +290,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Managment">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/frontend/logo/test.webp" style="width:50px;" alt="">
+                                <img src="frontend/logo/test.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -312,7 +312,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Engineering">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/top/test2.webp" style="width:50px;" alt="">
+                                <img src="top/test2.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -334,7 +334,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Medical">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/top/medical.webp" style="width:50px;" alt="">
+                                <img src="top/medical.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -360,7 +360,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Science">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/top/test1.webp" style="width:50px;" alt="">
+                                <img src="top/test1.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -382,7 +382,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Arts">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/top/arts.webp" style="width:50px;" alt="">
+                                <img src="top/arts.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -404,7 +404,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Commerce">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/top/commerce.webp" style="width:50px;" alt="">
+                                <img src="top/commerce.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -430,7 +430,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Education">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/top/education.webp" style="width:50px;" alt="">
+                                <img src="top/education.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -452,7 +452,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Pharmacy">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/top/pharmacy.webp" style="width:50px;" alt="">
+                                <img src="top/pharmacy.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -474,7 +474,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Law">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/top/law.webp" style="width:50px;" alt="">
+                                <img src="top/law.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -500,7 +500,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Fashion">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/top/fashion.webp" style="width:50px;" alt="">
+                                <img src="top/fashion.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -522,7 +522,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Architecture">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/top/archi.webp" style="width:50px;" alt="">
+                                <img src="top/archi.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -544,7 +544,7 @@ $(document).ready(function() {
                         <a href="javascript:void(0);" class="mangamenbrowse" data-id="Agriculture">
                             <div class="row">
                                 <div class="col-2">
-                                <img src="public/top/agri.webp" style="width:50px;" alt="">
+                                <img src="top/agri.webp" style="width:50px;" alt="">
                                 </div>
                                 <div class="col-8">
                                 <p class="text-center text-dark">
@@ -732,14 +732,14 @@ return urlFriendlyName;
                         <div class="blog-item">
                             <div class="blog-img">
                                 <div class="blog-img-inner">
-                                    <img class="img-fluid w-100 rounded-top img-fluid img-thumbnail" src="public/college/${result.image}" alt="Image" style="height:200px;">
+                                    <img class="img-fluid w-100 rounded-top img-fluid img-thumbnail" src="college/${result.image}" alt="Image" style="height:200px;">
                                     <div class="blog-icon">
                                         <a href="{{route('view-details')}}?id=${result.user_id}" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                     </div>
                                 </div>
                                 <div class="blog-info d-flex align-items-center border border-start-0 border-end-0" style="background: linear-gradient(179.6deg, rgba(255, 255, 255, 0) 43.01%, rgba(0, 0, 0, 0.81) 75.94%); color: #FFFFFF;">
                                     <small class="flex-fill text-start border-start">
-                                        <img src="public/college/${result.logo}"  alt="" style="height: 100px;">
+                                        <img src="college/${result.logo}"  alt="" style="height: 100px;">
                                     </small>
                                     
                                 <h6 class="text-light font-weight-bold">
@@ -755,12 +755,12 @@ return urlFriendlyName;
                             <div class="blog-content border border-top-0 rounded-bottom">
                             <ul class="intro-banner-icon d-flex flex-wrap">
                                 <li>
-                                    <img src="public/frontend/logo/i31.webp" alt="">
+                                    <img src="frontend/logo/i31.webp" alt="">
                                     <span>  ${result.uni_name}</span>
                                 </li>
                                 &nbsp;
                                 <li>
-                                    <img src="public/frontend/logo/i29.webp" alt="">
+                                    <img src="frontend/logo/i29.webp" alt="">
                                     <span>${result.Established}</span>
                                 </li>
                                 &nbsp;
@@ -773,7 +773,7 @@ return urlFriendlyName;
     <div class="d-flex fcl_list">
     <!-- <div class="fac_wrp"> -->
         <div class="fac_wrp">
-        <img src="public/icons/${result.fac_image ? result.fac_image : '1709719444.png'}" alt="" style="width: 35px; height: auto;">
+        <img src="icons/${result.fac_image ? result.fac_image : '1709719444.png'}" alt="" style="width: 35px; height: auto;">
          <span>${result.fac_name ? result.fac_name : 'Cricket'}</span>
         </div>
 </div>
@@ -1308,7 +1308,7 @@ return urlFriendlyName;
         @foreach($articles as $key => $val)
             <div class="testimonial-item text-center rounded">
                 <div class="card">
-                    <img class="card-img-top" src="public/articles/{{$val->image}}" style="width:100%!important;" alt="Card image cap">
+                    <img class="card-img-top" src="articles/{{$val->image}}" style="width:100%!important;" alt="Card image cap">
                     <div class="card-body text-white">
                         <p class="text-dark text-start" id="articletitle-${index}">{{$val->title}}</p>
                     </div>

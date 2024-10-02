@@ -23,20 +23,20 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
-        <link href="{{asset('public/frontend/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-        <link href="{{asset('public/frontend/lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
+        <link href="{{asset('frontend/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+        <link href="{{asset('frontend/lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="{{asset('public/frontend/css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href="{{asset('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI/tZ1e1k4pS6p1fGn9c/MKJnu3hhVovwQmiKvBU=" crossorigin="anonymous"></script>
         <!-- Template Stylesheet -->
-        <link href="{{asset('public/frontend/css/style.css')}}" rel="stylesheet">
-        <link href="{{asset('public/frontend/css/new.js')}}" rel="stylesheet">
+        <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
+        <link href="{{asset('frontend/css/new.js')}}" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
         
@@ -175,8 +175,8 @@ position: relative;
             
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="{{route('index')}}" class="navbar-brand p-0">
-                    <!-- <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>Travela</h1> -->
-                    <img src="{{asset('public/frontend/logo.png')}}" alt="Logo">
+                     <h1 class="m-0"><i class="fa fa-building me-3"></i>Edulinker</h1> 
+                    {{-- <img src="{{asset('frontend/logo.png')}}" alt="Logo"> --}}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -217,7 +217,7 @@ position: relative;
                     
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img src="{{asset('public/frontend/front.jpg')}}" class="img-fluid" alt="Image">
+                            <img src="{{asset('front.jpg')}}" class="img-fluid" alt="Image">
                             <div class="carousel-caption">
                                 <div class="p-3" style="max-width: 900px;">
                                     <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Edulinker - Where Educational Choices Are Made Easy</h4>
@@ -263,7 +263,8 @@ position: relative;
     <!-- <h5 class="card-header text-white">Featured</h5> -->
     <div class="row">
       <div class="col-6">
-      <img src="{{asset('public/frontend/logo.png')}}" style="width:100px; margin-left:20px;" alt="">
+      {{-- <img src="{{asset('frontend/logo.png')}}" style="width:100px; margin-left:20px;" alt=""> --}}
+      Edulinker
       </div>
       <div class="col-6">
       <h5 class=" text-white">Need a Call Back</h5>

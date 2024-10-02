@@ -155,7 +155,7 @@
                     </div>
 
                     <a href="{{route('news-single-data')}}?id=${article.id}" class="lisitingCard_right desktop_display">
-                    <img src="public/news/${article.image}" width="216" height="151" alt="Listing Card Image">
+                    <img src="news/${article.image}" width="216" height="151" alt="Listing Card Image">
                     </a>
                     </div>
                   </div>
