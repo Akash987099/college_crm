@@ -1,0 +1,331 @@
+.custom-prev-btn,
+.custom-next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 39px !important;
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 1px solid var(--bs-light);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.custom-prev-btn {
+    left: 0;
+    padding: 5px 20px;
+}
+
+.custom-next-btn {
+    right: 0;
+    padding: 5px 23px;
+}
+
+.owl-dots {
+    /* Styles for the dots container */
+}
+
+.new-carousel .card {
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the card */
+}
+
+.new-carousel .card-body {
+    padding: 15px;
+}
+
+.new-carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.owl-item {
+    margin-right: 0; /* Remove default margin */
+}
+
+.slider-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Slider Wrapper */
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  /* Slide */
+  .slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* background-color: #f0f0f0; */
+    /* border: 1px solid #000; */
+  }
+
+  /* Buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    z-index: 1;
+    color: var(--bs-primary);
+font-size: 14px;
+transition: 0.5s;
+  }
+
+  .prev {
+    position: absolute;
+/* top: 4px; */
+margin-top: 150px;
+/* align-items: s; */
+/* text-align: center; */
+left: 517px;
+width:39px!important;
+padding: 5px 20px;
+background-color: #fff;
+border: 1px solid var(--bs-light);
+border-radius: 30px;
+transition: 0.5s;
+  }
+
+  .next {
+    position: absolute;
+/* top: -10px; */
+margin-top: 150px;
+right: 517px;
+width: 39px!important;;
+background-color: #fff;
+padding: 5px 23px;
+border: 1px solid var(--bs-light);
+border-radius: 30px;
+transition: 0.5s;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 30px;
+    gap: 10px;
+  }
+  .text-base {
+    font-size: medium;
+  }
+  .text-large {
+    font-size: 20px;
+  }
+  .flex {
+    display: flex;
+    gap: 20px;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .items-center {
+    align-items: center;
+  }
+
+  .border {
+    border: 1px solid #86bc42;
+  }
+  .brand {
+    color: #86bc42;
+  }
+  .bgBrand {
+    /* background: #86bc42; */
+  }
+
+                  ul li {
+                    list-style: none;
+                  }
+                  .d-flex.fcl_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex.fac_wrp {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+.top-colleges-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_vw_btns {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin-right: 5px; /* Adjust margin as needed */
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+padding: 0;
+}
+
+/* Add your existing CSS styles here */
+
+/* Additional styles for slider dots */
+.slider-dots-container {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+.slider-dot {
+width: 10px;
+height: 10px;
+background-color: #333;
+border-radius: 50%;
+margin: 0 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.slider-dot.active {
+background-color: #86bc42; /* Active dot color */
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #86bc42; /* Active dot color */
+  }
+
+  .custom-button {
+    border: 1px solid;
+}
+
+.custom-button:hover {
+    color: white;
+    background: black;
+}
+
+.d-flex.fac_wrp{
+    font-weight: 500;
+font-size: 11px;
+line-height: 123.4%;
+text-align: justify;
+align-items: center;
+margin-bottom: 4px;
+letter-spacing: .5px;
+color: #2d3e50;
+}.d-flex{
+    display: flex!important;
+}
+
+.e-exam-head{
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid #F3F3F3;
+}
+.e-exam-head h3{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 19px;
+    color: #1D2C3A;
+    margin-bottom: 6px;
+    position: relative;
+    padding-bottom: 6px;
+}
+.e-exam-head h3::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background: #86BC42;
+    bottom: 0;
+    left: 0;
+}
+.e-exam-body p{
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.reammore-btn{
+    color: #86BC42;
+    font-size: 12px;
+    font-weight: 600;
+}
+.e-exam-footer{
+    padding: 1px 0px 1px 0;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: auto;
+    border-top: 1px solid #F3F3F3;
+}
+.e-exam-form-time ul{
+    letter-spacing: .5px;
+}
+.flex-wrap{
+    flex-wrap: wrap!important;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.e-exam-form-time{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -14px;
+}
+.sitebtn.two{
+    background: #86bc42;
+    border: 1px solid #86bc42 !important;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 10px;
+    display: inline-block;
+    margin-left:60px;
+    padding: 5px 12px;
+}
+ul.d-flex li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the space between items */
+}
+
+.label {
+    font-weight: bold; /* Optionally make the label bold */
+    margin-right: 5px; /* Adjust the space between label and date */
+}
+
+.date {
+    font-size: 16px; /* Adjust the font size */
+}
+ul {
+    padding-left: 0rem;
+}
