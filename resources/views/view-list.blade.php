@@ -875,7 +875,7 @@ return urlFriendlyName;
         
         `;
     });
-    // check
+    
 
     var html = `
         <div class="col-md-6 col-lg-6 col-xl-12">
