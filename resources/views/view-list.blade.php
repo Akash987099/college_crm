@@ -876,8 +876,6 @@ return urlFriendlyName;
         `;
     });
 
-    var assetUrl = "{{ asset('') }}";
-
     var html = `
         <div class="col-md-6 col-lg-6 col-xl-12">
             <div class="card" style="border-radius : 0!important;">
@@ -886,7 +884,7 @@ return urlFriendlyName;
                         <div class="col-4">
                             <div class="position-relative">
                                 <div class="img-container rounded" style="height: auto!important;">
-                                 <img src="` + assetUrl + `college/${college.image}" class="img-fluid" alt="">
+                                <img src="{{asset('college/${college.image}')}}" " class="img-fluid" alt="">
                                     
                                 </div>
                             </div>
