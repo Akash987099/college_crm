@@ -884,7 +884,7 @@ return urlFriendlyName;
                         <div class="col-4">
                             <div class="position-relative">
                                 <div class="img-container rounded" style="height: auto!important;">
-                                <img src="college/${college.image}" " class="img-fluid" alt="">
+                                <img src="{{asset('college/${college.image}')}}" " class="img-fluid" alt="">
                                     
                                 </div>
                             </div>
@@ -893,7 +893,7 @@ return urlFriendlyName;
                             <div class="d-flex">
                                 <div class="mr-2">
                                 <div class="logo-container">
-                            <img src="college/logo/${college.logo}" style="height:80px;" class=""  alt="">
+                            <img src="{{asset('college/logo/${college.logo}')}}" style="height:80px;" class=""  alt="">
                              </div>
 
                                 </div>
