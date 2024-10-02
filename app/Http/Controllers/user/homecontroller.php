@@ -324,6 +324,7 @@ foreach ($articles as $key => $val) {
         }
 
     }
+    // h
 
     public function gettopcitybyid(Request $request){
         $totalcity = City::count();
